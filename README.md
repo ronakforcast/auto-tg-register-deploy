@@ -1,0 +1,1 @@
+# auto-tg-register-deploy
