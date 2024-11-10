@@ -1,0 +1,14 @@
+namespace: casta-agent
+replicas: 2
+image: "ronakpatildocker/instacetargetmanager:latest"
+
+# Environment variables for the deployment
+awsRegion: "us-west-2"  # Default AWS region, can be overridden
+apiKey: "replace-with-your-base64-api-key"
+clusterId: "replace-with-your-base64-cluster-id"
+
+# Node selector for scheduling
+nodeSelector: {}
+
+# Tolerations for scheduling
+tolerations: []

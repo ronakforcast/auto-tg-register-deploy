@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  castai-node-targetgroup-manager:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2024-11-10T21:07:24.046262+05:30"
+    description: A Helm chart for deploying Castai agent resources
+    digest: 5cc8154653686e651a56a36c42475e92b88fd4a96d7a090e2243db74a36f36f4
+    name: castai-node-targetgroup-manager
+    urls:
+    - https://ronakforcast.github.io/auto-tg-register-deploy/charts/charts/castai-node-targetgroup-manager-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-11-10T21:07:24.045595+05:30"
