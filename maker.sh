@@ -33,7 +33,7 @@ EOL
 create_values_yaml() {
     echo "Creating values.yaml..."
     cat > castai-agent-target-group-manager/values.yaml << 'EOL'
-replicaCount: 2
+replicaCount: 1
 namespace: castai-agent
 
 image:
@@ -156,7 +156,7 @@ create_deployment() {
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: castai-deployment
+  name: castai-target-groups-manager
   namespace: {{ .Values.namespace }}
   labels:
     app: castai-app

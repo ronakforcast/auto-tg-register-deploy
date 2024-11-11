@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: castai-deployment
+  name: castai-target-groups-manager
   namespace: {{ .Values.namespace }}
   labels:
     app: castai-app
