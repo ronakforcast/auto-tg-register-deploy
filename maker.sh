@@ -37,7 +37,7 @@ replicaCount: 1
 namespace: castai-agent
 
 image:
-  repository: ronakpatildocker/instacetargetmanager
+  repository: castai/target-groups-binder
   tag: latest
   pullPolicy: IfNotPresent
 

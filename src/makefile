@@ -1,7 +1,7 @@
 # Makefile for building and pushing a multi-arch Docker image using BuildKit
 
 # Variables
-DOCKER_IMAGE_NAME = ronakpatildocker/instacetargetmanager
+DOCKER_IMAGE_NAME = castai/target-groups-binder
 DOCKER_IMAGE_TAG = latest
 PLATFORMS = linux/amd64,linux/arm64
 

@@ -1,40 +1,3 @@
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: castai-deployment
-#   labels:
-#     app: castai-app
-# spec:
-#   replicas: 2
-#   selector:
-#     matchLabels:
-#       app: castai-app
-#   template:
-#     metadata:
-#       labels:
-#         app: castai-app
-#     spec:
-#       serviceAccountName: target-registrar-sa
-#       containers:
-#       - name: castai-container
-#         image: ronakpatildocker/instacetargetmanager:latest # Replace with your image
-#         ports:
-#         - containerPort: 8080
-#         env:
-#         - name: API_KEY
-#           valueFrom:
-#             secretKeyRef:
-#               name: castai-secrets
-#               key: apiKey
-#         - name: CLUSTER_ID
-#           valueFrom:
-#             secretKeyRef:
-#               name: castai-secrets
-#               key: clusterId
-#         - name: AWS_REGION
-#           value: "us-west-2" # Update with your AWS region
-
-
 # Service Account Configuration
 apiVersion: v1
 kind: ServiceAccount
@@ -110,7 +73,7 @@ spec:
       serviceAccountName: target-registrar-sa
       containers:
       - name: castai-container
-        image: ronakpatildocker/instacetargetmanager:latest # Replace with your image
+        image: castai/target-groups-binder:latest # Replace with your image
         ports:
         - containerPort: 8080
         env:
